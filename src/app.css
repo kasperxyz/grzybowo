@@ -1,0 +1,101 @@
+/* Global CSS Variables */
+:root {
+  --font-contax: 'Contax Sans', sans-serif;
+  --font-ivy: 'Ivy Ora Display', serif;
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --brand-color: #C5A562;
+  --brand-color-hover: #BC9B56;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-contax);
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-ivy);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.cta-button {
+    background-color: var(--brand-color);
+    font-family: var(--font-contax);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--brand-color-hover);
+}
+
+/* Utility Classes */
+.font-contax {
+  font-family: var(--font-contax);
+}
+
+.font-ivy {
+  font-family: var(--font-ivy);
+}
+
+.font-system {
+  font-family: var(--font-system);
+}
+
+/* Font Weight Utilities */
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}

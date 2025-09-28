@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "houses": "Häuser",
+    "attractions": "Attraktionen",
+    "location": "Lage"
+  },
+  "hero": {
+    "title_line1": "Intelligente",
+    "title_line2": "Rubinhäuser",
+    "cta_button": "Bei Sun and Snow buchen"
+  },
+  "intro": {
+    "heading_line1": "Einladende Atmosphäre für",
+    "heading_line2": "Entspannung und Ruhe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+  },
+  "houses": {
+    "heading_line1": "Einladende Atmosphäre für",
+    "heading_line2": "Entspannung und Ruhe",
+    "house_name": "Rubin",
+    "house_size": "Groß"
+  },
+  "features": {
+    "heading_line1": "Einladende Atmosphäre für",
+    "heading_line2": "Entspannung und Ruhe",
+    "feature_item": "Natürliche Schönheit"
+  },
+  "map": {
+    "heading_line1": "Einladende Atmosphäre für",
+    "heading_line2": "Entspannung und Ruhe",
+    "map_title": "Standortkarte",
+    "map_subtitle": "Gdańsk • Szczecin"
+  },
+  "footer": {
+    "company_line1": "INTELLIGENTE",
+    "company_line2": "RUBIN HÄUSER",
+    "copyright": "@2025"
+  },
+  "common": {
+    "languages": {
+      "polish": "Polnisch",
+      "english": "Englisch",
+      "german": "Deutsch"
+    }
+  }
+}

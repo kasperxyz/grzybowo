@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "houses": "Domki",
+    "attractions": "Atrakcje", 
+    "location": "Lokalizacja"
+  },
+  "hero": {
+    "title": "Inteligentne domy rubinowe",
+    "cta_button": "Rezerwuj na Sun and Snow"
+  },
+  "intro": {
+    "heading_line1": "Zachęcająca atmosfera do",
+    "heading_line2": "wytchnienia i spokojnego",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+  },
+  "houses": {
+    "heading_line1": "Zachęcająca atmosfera do",
+    "heading_line2": "wytchnienia i spokojnego",
+    "house_name": "Rubin",
+    "house_size": "Duży"
+  },
+  "features": {
+    "heading_line1": "Zachęcająca atmosfera do", 
+    "heading_line2": "wytchnienia i spokojnego",
+    "feature_item": "Naturalne piękno"
+  },
+  "map": {
+    "heading_line1": "Zachęcająca atmosfera do",
+    "heading_line2": "wytchnienia i spokojnego", 
+    "map_title": "Mapa lokalizacji",
+    "map_subtitle": "Gdańsk • Szczecin"
+  },
+  "footer": {
+    "company_line1": "INTELIGENTNE",
+    "company_line2": "DOMY RUBINOWE",
+    "copyright": "@2025"
+  },
+  "common": {
+    "languages": {
+      "polish": "Polski",
+      "english": "English", 
+      "german": "Deutsch"
+    }
+  }
+}

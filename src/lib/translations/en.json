@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "houses": "Houses",
+    "attractions": "Attractions",
+    "location": "Location"
+  },
+  "hero": {
+    "title": "Intelligent ruby houses",
+    "cta_button": "Book on Sun and Snow"
+  },
+  "intro": {
+    "heading_line1": "Inviting atmosphere for",
+    "heading_line2": "relaxation and peace",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+  },
+  "houses": {
+    "heading_line1": "Inviting atmosphere for",
+    "heading_line2": "relaxation and peace",
+    "house_name": "Ruby",
+    "house_size": "Large"
+  },
+  "features": {
+    "heading_line1": "Inviting atmosphere for",
+    "heading_line2": "relaxation and peace",
+    "feature_item": "Natural beauty"
+  },
+  "map": {
+    "heading_line1": "Inviting atmosphere for",
+    "heading_line2": "relaxation and peace",
+    "map_title": "Location map",
+    "map_subtitle": "Gdańsk • Szczecin"
+  },
+  "footer": {
+    "company_line1": "INTELLIGENT",
+    "company_line2": "RUBY HOUSES",
+    "copyright": "@2025"
+  },
+  "common": {
+    "languages": {
+      "polish": "Polish",
+      "english": "English",
+      "german": "German"
+    }
+  }
+}
