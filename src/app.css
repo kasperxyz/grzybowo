@@ -35,7 +35,7 @@ h1 {
     line-height: 6rem;
 }
 
-h2 {
+h2, h3 {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 300;
@@ -66,36 +66,22 @@ h2 {
     background-color: var(--brand-color-hover);
 }
 
-/* Utility Classes */
-.font-contax {
-  font-family: var(--font-contax);
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.font-ivy {
-  font-family: var(--font-ivy);
+.nav-link:hover {
+    color: white;
 }
 
-.font-system {
-  font-family: var(--font-system);
-}
-
-/* Font Weight Utilities */
-.font-light {
-  font-weight: 300;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-black {
-  font-weight: 900;
+.nav-link.active {
+    color: white;
+    font-weight: 600;
 }
