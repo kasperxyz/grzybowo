@@ -303,9 +303,9 @@
                 </button>
             </div>
             {/if}
-            <div class="map-svg">
+            <!-- <div class="map-svg">
                 <img src={map} alt="Map" class="map-image" />
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -535,14 +535,7 @@
             }
           @media (max-width: 768px) {
             gap: 2rem;
-          }
-          .house-name {
-            font-size: 2.5rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            @media (max-width: 768px) {
-              font-size: 2rem;
-            }
+            padding: 1.5rem;
           }
         
           .house-info {
@@ -649,7 +642,7 @@
 
   /* Map Section */
   .map-section {
-    padding: 6rem 0 0 0;
+    padding: 6rem 0;
     background: rgba(236, 229, 221, 0.50);
 
     .map-body {
