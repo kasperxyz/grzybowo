@@ -23,23 +23,20 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-ivy);
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 4px;
+    line-height: 1.2;
 }
 
-h1 {
-    font-size: 5.5rem;
-    line-height: 6rem;
-}
-
-h2, h3 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 300;
-}
+h1 { font-size: clamp(2rem, 5vw + 1rem, 5.5rem); font-weight: 400;}
+h2, h3 { font-size: clamp(1.5rem, 4vw + 0.5rem, 2.5rem); font-weight: 300; }
+h3 { font-size: clamp(1.5rem, 3vw + 0.25rem, 2.25rem); font-weight: 300; }
+h4 { font-size: clamp(1.25rem, 2.5vw + 0.25rem, 1.75rem); }
+h5 { font-size: clamp(1.1rem, 2vw + 0.2rem, 1.5rem); }
+h6 { font-size: clamp(1rem, 1.5vw + 0.2rem, 1.25rem); }
 
 .container {
     max-width: 1360px;

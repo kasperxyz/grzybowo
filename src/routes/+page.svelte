@@ -44,6 +44,12 @@
   function switchLanguage(lang: keyof typeof languageRoutes) {
     window.location.href = languageRoutes[lang];
   }
+
+  function handleLanguageChange(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedLang = selectElement.value as keyof typeof languageRoutes;
+    switchLanguage(selectedLang);
+  }
 </script>
 
 <!-- Hero Section -->
@@ -53,9 +59,11 @@
             <div class="navigation">
                 <!-- Left Menu -->
                 <div class="navigation-menu-left">
-                    <a href={languageRoutes.pl} class="nav-link" class:active={currentLang === 'pl'}>{$_('common.languages.polish')}</a>
-                    <a href={languageRoutes.en} class="nav-link" class:active={currentLang === 'en'}>{$_('common.languages.english')}</a>
-                    <a href={languageRoutes.de} class="nav-link" class:active={currentLang === 'de'}>{$_('common.languages.german')}</a>
+                    <select class="language-dropdown" on:change={handleLanguageChange} value={currentLang}>
+                        <option value="pl">🇵🇱 {$_('common.languages.polish')}</option>
+                        <option value="en">🇬🇧 {$_('common.languages.english')}</option>
+                        <option value="de">🇩🇪 {$_('common.languages.german')}</option>
+                    </select>
                 </div>
 
                 <!-- Logo/Icon in center -->
@@ -94,7 +102,7 @@
 
             <div class="introduction-col-2">
                 <h2>
-                Zachęcająca atmosfera do wytchnienia i spokojnego
+                  Zachęcająca atmosfera do wytchnienia i spokojnego
                 </h2>
             </div>
 
@@ -116,11 +124,11 @@
 </section>
 
 <!-- Divider Image -->
-<section class="divider">
+<!-- <section class="divider">
     <div class="container">
         <img src={features1} alt="Decorative element" class="divider-image" />
     </div>
-</section>
+</section> -->
 
 <!-- Houses Section -->
 <section id="houses" class="houses">
@@ -343,12 +351,15 @@
     .hero {
         position: relative;
         height: 810px;
-        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 100%), url('../lib/assets/images/hero.jpg') lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/heros.jpg') lightgray 50% / cover no-repeat;
         background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @media (max-width: 1024px) {
+          height: 620px;
+        }
 
         .hero-body {
             flex-grow: 1;
@@ -375,19 +386,53 @@
                 align-items: center;
                 align-self: stretch;
                 position: relative;
+                @media (max-width: 1024px) {
+                  flex-direction: row-reverse;
+                }
 
                 .navigation-menu-left, 
                 .navigation-menu-right {
                     display: flex;
                     align-items: center;
                     gap: 4rem;
+
+                    .language-dropdown {
+                        background: transparent;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        border-radius: 4px;
+                        color: white;
+                        padding: 0.5rem 1rem;
+                        font-size: 0.875rem;
+                        cursor: pointer;
+                        transition: background 0.3s ease;
+
+                        &:hover {
+                            border-color: rgba(255, 255, 255, 0.5);
+                            background: rgba(255, 255, 255, 0.1);
+                        }
+
+                        option {
+                            background: #111827;
+                            color: white;
+                            padding: 0.5rem;
+                        }
+                    }
                 }
-        
+                @media (max-width: 1024px) {
+                  .navigation-menu-right {
+                    display: none;
+                  }
+                }
+
                 .navigation-logo {
                     position: absolute;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+                    @media (max-width: 1024px) {
+                      position: static;
+                      transform: none;
+                    }
                 }
             }
 
@@ -418,7 +463,39 @@
 
         p {
             margin: 0;
-            padding-bottom: 40px;
+            &:nth-child(1) {
+                padding-bottom: 24px;
+            }
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+            grid-row-gap: 24px;
+            
+            .introduction-col-1,
+            .introduction-col-2,
+            .introduction-col-3,
+            .introduction-col-4 {
+                grid-area: auto;
+            }
+            
+            .introduction-col-1 {
+                order: 2;
+            }
+            
+            .introduction-col-2 {
+                order: 1;
+            }
+            
+            .introduction-col-3 {
+                order: 3;
+            }
+            
+            .introduction-col-4 {
+                order: 4;
+            }
         }
     }
   }
