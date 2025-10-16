@@ -347,7 +347,6 @@
 </footer>
 
 <style>
-    /* Hero */
     .hero {
         position: relative;
         height: 810px;
@@ -421,7 +420,9 @@
   /* Introduction Section */
   .introduction {
     padding: 8rem 0;
-
+    @media (max-width: 768px) {
+      padding: 6rem 0;
+    }
     .introduction-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -444,13 +445,18 @@
             &:nth-child(1) {
                 padding-bottom: 24px;
             }
+           @media (max-width: 1024px) {
+              max-width: 420px;
+              margin: auto;
+            }
         }
 
         /* Mobile responsive adjustments */
         @media (max-width: 1024px) {
             grid-template-columns: 1fr;
             grid-column-gap: 0;
-            grid-row-gap: 24px;
+            grid-row-gap: 4rem;
+            text-align: center;
             
             .introduction-col-1,
             .introduction-col-2,
@@ -498,7 +504,7 @@
 
     .houses-header {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
   
     .houses-grid {
@@ -573,7 +579,7 @@
 
     .features-header {
       text-align: center;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
 
     .features-content {
