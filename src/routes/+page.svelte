@@ -510,17 +510,16 @@
       }
 
       .house-card {
-        height: 620px;
         display: flex;
         flex-direction: column;
-        @media (max-width: 768px) {
-          height: 420px;
-        }
 
         .house-image {
           width: 100%;
-          height: 100%;
+          height: 420px;
           object-fit: cover;
+          @media (max-width: 768px) {
+            height: 320px;
+          }
         }
 
       
@@ -534,11 +533,16 @@
             p {
                 margin: 0;
             }
-
+          @media (max-width: 768px) {
+            gap: 2rem;
+          }
           .house-name {
             font-size: 2.5rem;
             font-weight: 300;
             text-transform: uppercase;
+            @media (max-width: 768px) {
+              font-size: 2rem;
+            }
           }
         
           .house-info {
