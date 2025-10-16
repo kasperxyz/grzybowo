@@ -515,6 +515,9 @@
         cursor: pointer;
         overflow: hidden;
         height: 540px;
+        @media (max-width: 768px) {
+          height: 420px;
+        }
 
         .house-image {
           width: 100%;
