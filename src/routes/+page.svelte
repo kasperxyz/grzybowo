@@ -349,7 +349,8 @@
 <style>
     .hero {
         position: relative;
-        height: 810px;
+        height: 100vh;
+        max-height: 820px;
         background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/heros.jpg') lightgray 50% / cover no-repeat;
         background-size: cover;
         display: flex;
@@ -371,6 +372,7 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 2rem;
+                max-width: 820px;
             }
         }
 
