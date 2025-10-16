@@ -143,7 +143,6 @@
             <!-- House 1 -->
             <div class="house-card">
                 <img src={features1} alt="House Rubin" class="house-image" />
-                <div class="house-overlay"></div>
                 <div class="house-content">
                     <div class="house-info">
                         <h3 class="house-name">Rubin<span>Duży</span></h3>
@@ -158,7 +157,6 @@
             <!-- House 2 -->
             <div class="house-card">
                 <img src={features2} alt="House Rubin" class="house-image" />
-                <div class="house-overlay"></div>
                 <div class="house-content">
                     <div class="house-info">
                         <h3 class="house-name">Rubin<span>Mały</span></h3>
@@ -496,6 +494,7 @@
   /* Houses Section */
   .houses {
     padding: 6rem 0;
+    background: rgba(236, 229, 221, 0.50);
 
     .houses-header {
       text-align: center;
@@ -511,10 +510,9 @@
       }
 
       .house-card {
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-        height: 540px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
         @media (max-width: 768px) {
           height: 420px;
         }
@@ -524,24 +522,15 @@
           height: 100%;
           object-fit: cover;
         }
-      
-        .house-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(180deg, rgba(6, 7, 14, 0.1) 50%, rgba(14, 15, 30, 0.70) 100%);
-        }
+
       
         .house-content {
-          position: absolute;
-          bottom: 2rem;
-          left: 2rem;
-          right: 2rem;
-          color: white;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
-          gap: 1.5rem;
-
+          gap: 4rem;
+          background: white;
+          padding: 2rem;
             p {
                 margin: 0;
             }
@@ -557,8 +546,6 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             span {
                 font-style: italic;
                 text-transform: lowercase;
@@ -586,7 +573,6 @@
   /* Features Section */
   .features {
     padding: 6rem 0;
-    background: rgba(236, 229, 221, 0.50);
 
     .features-header {
       text-align: center;
@@ -660,6 +646,7 @@
   /* Map Section */
   .map-section {
     padding: 6rem 0 0 0;
+    background: rgba(236, 229, 221, 0.50);
 
     .map-body {
       display: flex;
@@ -733,6 +720,7 @@
           border: 1px solid #EAE4DD;
           flex: 0 0 calc(25% - 1rem);
           min-width: 0;
+          background: white;
           @media (max-width: 768px) { 
             flex: 0 0 calc(60% - 1rem) !important;
           }
@@ -740,7 +728,6 @@
           .map-card-item {
             display: flex;
             flex-direction: column;
-            background-color: #F5F2EE;
 
             .map-image {
               width: 100%;
