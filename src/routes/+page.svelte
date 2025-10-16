@@ -338,9 +338,11 @@
         <div class="footer-bottom">
             <p class="footer-copyright">@2025</p>
             <div class="footer-lang">
-                <a href={languageRoutes.pl} class="nav-link" class:active={currentLang === 'pl'}>{$_('common.languages.polish')}</a>
-                <a href={languageRoutes.en} class="nav-link" class:active={currentLang === 'en'}>{$_('common.languages.english')}</a>
-                <a href={languageRoutes.de} class="nav-link" class:active={currentLang === 'de'}>{$_('common.languages.german')}</a>
+                <select class="language-dropdown" on:change={handleLanguageChange} value={currentLang}>
+                    <option value="pl">🇵🇱 {$_('common.languages.polish')}</option>
+                    <option value="en">🇬🇧 {$_('common.languages.english')}</option>
+                    <option value="de">🇩🇪 {$_('common.languages.german')}</option>
+                </select>
             </div>
         </div>
     </div>
@@ -395,28 +397,6 @@
                     display: flex;
                     align-items: center;
                     gap: 4rem;
-
-                    .language-dropdown {
-                        background: transparent;
-                        border: 1px solid rgba(255, 255, 255, 0.3);
-                        border-radius: 4px;
-                        color: white;
-                        padding: 0.5rem 1rem;
-                        font-size: 0.875rem;
-                        cursor: pointer;
-                        transition: background 0.3s ease;
-
-                        &:hover {
-                            border-color: rgba(255, 255, 255, 0.5);
-                            background: rgba(255, 255, 255, 0.1);
-                        }
-
-                        option {
-                            background: #111827;
-                            color: white;
-                            padding: 0.5rem;
-                        }
-                    }
                 }
                 @media (max-width: 1024px) {
                   .navigation-menu-right {
@@ -526,12 +506,15 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
 
       .house-card {
         position: relative;
         cursor: pointer;
         overflow: hidden;
-        aspect-ratio: 664/576;
+        height: 540px;
 
         .house-image {
           width: 100%;
@@ -542,7 +525,7 @@
         .house-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, rgba(6, 7, 14, 0.00) 49.76%, rgba(14, 15, 30, 0.70) 100%);
+          background: linear-gradient(180deg, rgba(6, 7, 14, 0.1) 50%, rgba(14, 15, 30, 0.70) 100%);
         }
       
         .house-content {
@@ -554,7 +537,7 @@
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
-            gap: 1.5rem;
+          gap: 1.5rem;
 
             p {
                 margin: 0;
@@ -578,6 +561,14 @@
                 text-transform: lowercase;
                 letter-spacing: 0px;
                 padding-left: 0.5rem;
+            }
+            @media (max-width: 768px) {
+              flex-direction: column;
+              align-items: flex-start;
+              .cta-button {
+                width: 100%;
+                margin-top: 16px;
+              }
             }
           }
         }
@@ -604,6 +595,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
       align-items: center;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
   
       .features-images {
         display: flex;
@@ -645,8 +640,8 @@
               background: rgba(224, 215, 204, 0.50);
   
             .feature-svg {
-              width: 2rem;
-              height: 2rem;
+              width: 1.5rem;
+              height: 1.5rem;
               color: #4b5563;
             }
           }
@@ -678,6 +673,7 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        width: 100%;
       }
 
       .embla__prev,
@@ -705,11 +701,11 @@
       }
 
       .embla__prev {
-        left: -4rem;
+        left: 1rem;
       }
 
       .embla__next {
-        right: -4rem;
+        right: 1rem;
       }
 
       .embla__prev svg,
@@ -734,6 +730,9 @@
           border: 1px solid #EAE4DD;
           flex: 0 0 calc(25% - 1rem);
           min-width: 0;
+          @media (max-width: 768px) { 
+            flex: 0 0 calc(60% - 1rem) !important;
+          }
         
           .map-card-item {
             display: flex;
@@ -775,6 +774,12 @@
 
       .map-svg {
         display: flex;
+        width: 100%;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 886px;
+        }
       }
     }
   }
