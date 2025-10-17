@@ -344,7 +344,7 @@
         position: relative;
         height: 100vh;
         max-height: 820px;
-        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/heros.jpg') lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/hero2.jpg') lightgray 50% / cover no-repeat;
         background-size: cover;
         display: flex;
         align-items: center;
