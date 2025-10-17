@@ -85,7 +85,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>{$_('hero.title')}</h1>
-                <button class="cta-button">{$_('hero.cta_button')}</button>
+                <button class="cta-button">Rezerwuj</button>
             </div>
         </div>
     </div>
@@ -146,7 +146,7 @@
                 <div class="house-content">
                     <div class="house-info">
                         <h3 class="house-name">Rubin<span>Duży</span></h3>
-                        <button class="cta-button">{$_('hero.cta_button')}</button>
+                        <button class="cta-button">Rezerwuj</button>
                     </div>
                     <p>
                         4 sypialnie / 3 łazienki / kuchnia / Salon / Duży taras / Jacuzzi
@@ -160,7 +160,7 @@
                 <div class="house-content">
                     <div class="house-info">
                         <h3 class="house-name">Rubin<span>Mały</span></h3>
-                        <button class="cta-button">{$_('hero.cta_button')}</button>
+                        <button class="cta-button">Rezerwuj</button>
                     </div>
                     <p>
                         4 sypialnie / 3 łazienki / kuchnia / Salon / Duży taras / Jacuzzi
@@ -314,22 +314,15 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-        <!-- Logo & Contact -->
-        <div class="footer-left">
-            <div class="footer-logo">
-                <img src={logoBig} alt="Logo" class="logo-icon" />
-            </div>
-        </div>
-        
-        <!-- Right Side -->
-        <div class="footer-right">
-            <nav class="footer-nav">
-                <a href="#houses" class="nav-link">{$_('nav.houses')}</a>
-                <a href="#features" class="nav-link">{$_('nav.attractions')}</a>
-                <a href="#map" class="nav-link">{$_('nav.location')}</a>
-            </nav>
-            <button class="cta-button">{$_('hero.cta_button')}</button>
-        </div>
+          <!-- Logo & Contact -->
+          <div class="footer-left">
+              <div class="footer-logo">
+                  <img src={logoBig} alt="Logo" class="logo-icon" />
+              </div>
+          </div>
+          
+          <!-- Right Side -->
+          <button class="cta-button">Rezerwuj</button>
         </div>
     
     <!-- Divider -->
@@ -805,13 +798,6 @@
     gap: 0.75rem;
   }
 
-  .footer-right {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
   .footer-nav {
     display: flex;
     gap: 4rem;
@@ -850,10 +836,6 @@
     .footer-content {
       flex-direction: column;
       gap: 2rem;
-    }
-    
-    .footer-right {
-      text-align: left;
     }
     
     .footer-nav {

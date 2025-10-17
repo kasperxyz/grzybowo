@@ -1,12 +1,11 @@
 {
   "nav": {
-    "houses": "Domki",
-    "attractions": "Atrakcje", 
-    "location": "Lokalizacja"
+    "houses": "Domy",
+    "attractions": "Udogodnienia", 
+    "location": "Atrakcje"
   },
   "hero": {
-    "title": "Inteligentne rubinowe domy",
-    "cta_button": "Rezerwuj"
+    "title": "Inteligentne rubinowe domy"
   },
   "intro": {
     "heading_line1": "Zachęcająca atmosfera do",
