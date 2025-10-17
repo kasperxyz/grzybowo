@@ -24,6 +24,23 @@
 	<meta property="og:url" content="https://grzybowo.com" />
 	<link rel="canonical" href="https://grzybowo.com" />
 	<link rel="icon" href={favicon} />
+
+	<!-- Minimal JSON-LD structured data -->
+	{@html `<!-- JSON-LD -->\n<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "TouristAccommodation",
+		"name": "Grzybowo Vacation Rentals",
+		"description": "Luxury vacation rental houses in Grzybowo by the Baltic Sea.",
+		"url": "https://grzybowo.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Grzybowo",
+			"addressCountry": "PL"
+		},
+		"telephone": "+48-000-000-000",
+		"priceRange": "$$",
+		"openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59"
+	})}</script>`}
 </svelte:head>
 
 {@render children?.()}
