@@ -60,6 +60,7 @@ h6 { font-size: clamp(1rem, 1.5vw + 0.2rem, 1.25rem); }
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .cta-button:hover {

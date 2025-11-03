@@ -8,13 +8,12 @@
     "title": "Inteligentne rubinowe domy"
   },
   "intro": {
-    "heading_line1": "Zachęcająca atmosfera do",
-    "heading_line2": "wytchnienia i spokojnego",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+    "heading": "Zachęcająca atmosfera do wytchnienia i spokoju",
+    "description_1": "Rubinowe Domy to miejsce, w którym nowoczesny komfort spotyka się z nadmorskim spokojem. Każdy detal został zaprojektowany z myślą o odpoczynku — od przestronnych wnętrz po przemyślane rozwiązania technologiczne, które dbają o Twój komfort.",
+    "description_2": "Zatrzymaj się tu na chwilę, by poczuć równowagę między naturą a wygodą."
   },
   "houses": {
-    "heading_line1": "Zachęcająca atmosfera do",
-    "heading_line2": "wytchnienia i spokojnego",
+    "heading": "Dwa domy, jedna filozofia spokoju",
     "house_name": "Rubin",
     "house_size": "Duży"
   },

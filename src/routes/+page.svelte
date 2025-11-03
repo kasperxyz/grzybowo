@@ -4,13 +4,31 @@
   import { availableLanguages, languageRoutes } from '$lib/i18n.js';
   import logoSvg from '$lib/assets/images/logo.svg';
   import logoBig from '$lib/assets/images/logo-big.svg';
-  import features1 from '$lib/assets/images/features_1.png';
-  import features2 from '$lib/assets/images/features_2.png';
-  import features3 from '$lib/assets/images/features_3.png';
-  import map1 from '$lib/assets/images/map1.png';
-  import map2 from '$lib/assets/images/map2.png';
-  import map3 from '$lib/assets/images/map3.png';
-  import map from '$lib/assets/images/mapsvg.svg';
+  import photo1 from '$lib/assets/images/1.jpg';
+  import photo2 from '$lib/assets/images/2.jpg';
+  import photo3 from '$lib/assets/images/3.jpg';
+  import photo4 from '$lib/assets/images/4.jpg';
+  import photo5 from '$lib/assets/images/5.jpg';
+  import photo6 from '$lib/assets/images/6.jpg';
+  import photo7 from '$lib/assets/images/7.jpg';
+  import photo8 from '$lib/assets/images/8.jpg';
+  import photo9 from '$lib/assets/images/9.jpg';
+  import photo10 from '$lib/assets/images/10.jpg';
+  import sauna from '$lib/assets/images/sauna.jpg';
+  import beach from '$lib/assets/images/beach.jpg';
+  import cycling from '$lib/assets/images/cycling.jpg';
+  import hossoland from '$lib/assets/images/hossoland.jpg';
+  import kolobrzeg from '$lib/assets/images/kolobrzeg.jpg';
+  import gdansk from '$lib/assets/images/gdansk.jpg';
+  import szczecin from '$lib/assets/images/szczecin.jpg';
+  import saunaIcon from '$lib/assets/icons/sauna.svg';
+  import seaIcon from '$lib/assets/icons/sea.svg';
+  import bbqIcon from '$lib/assets/icons/bbq.svg';
+  import bikeIcon from '$lib/assets/icons/bike.svg';
+  import deckIcon from '$lib/assets/icons/deck.svg';
+  import petsIcon from '$lib/assets/icons/pets.svg';
+  import playgroundIcon from '$lib/assets/icons/playground.svg';
+  import wifiIcon from '$lib/assets/icons/wifi.svg';
   import emblaCarouselSvelte from 'embla-carousel-svelte';
   import { browser } from '$app/environment';
   
@@ -50,6 +68,9 @@
     const selectedLang = selectElement.value as keyof typeof languageRoutes;
     switchLanguage(selectedLang);
   }
+
+  // Booking URL used for all "Rezerwuj" CTAs
+  const bookingUrl = 'https://www.sunandsnow.pl/apartament-grzybowo-inteligentnerubinowedomy-988';
 </script>
 
 <!-- Hero Section -->
@@ -85,7 +106,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>{$_('hero.title')}</h1>
-                <button class="cta-button">Rezerwuj</button>
+                <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
             </div>
         </div>
     </div>
@@ -97,27 +118,27 @@
         <div class="introduction-body">
             <!-- Image -->
             <div class="introduction-col-1">
-                <img src={features1} alt="Interior view" class="intro-image" />
+                <img src={photo4} alt="Interior view" class="intro-image" />
             </div>
 
             <div class="introduction-col-2">
                 <h2>
-                  Zachęcająca atmosfera do wytchnienia i spokojnego
+                  {$_('intro.heading')}
                 </h2>
             </div>
 
             <!-- Content -->
             <div class="introduction-col-3">                
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    {$_('intro.description_1')}
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    {$_('intro.description_2')}
                 </p>
             </div>
 
             <div class="introduction-col-4">
-                <img src={features1} alt="Detail view" class="introduction-image" />
+                <img src={photo8} alt="Detail view" class="introduction-image" />
             </div>
         </div>
     </div>
@@ -133,37 +154,38 @@
 <!-- Houses Section -->
 <section id="houses" class="houses">
     <div class="container">
-        <div class="houses-header">
-            <h2 class="section-heading">
-                <div>Zachęcająca atmosfera do <br>wytchnienia i spokojnego</div>
-            </h2>
-        </div>
+      <div class="ruby-header">
+          <h2 class="ruby-heading">
+              Dwa domy, jedna filozofia spokoju
+          </h2>
+          <p class="ruby-description">Oba domy oferują ten sam standard luksusu. Niezależnie, który wybierzesz, zyskujesz dostęp do wspólnego ogrodu i sauny — idealnego miejsca na poranny relaks lub wieczorne rozmowy pod gwiazdami.</p>
+      </div>
         
         <div class="houses-grid">
             <!-- House 1 -->
             <div class="house-card">
-                <img src={features1} alt="House Rubin" class="house-image" />
+                <img src={photo3} alt="House Rubin" class="house-image" />
                 <div class="house-content">
                     <div class="house-info">
-                        <h3 class="house-name">Rubin<span>Duży</span></h3>
-                        <button class="cta-button">Rezerwuj</button>
+            <h3 class="house-name">Rubin<span>Duży</span></h3>
+            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
                     </div>
                     <p>
-                        4 sypialnie / 3 łazienki / kuchnia / Salon / Duży taras / Jacuzzi
+                        4 gości / 1 sypialnia / 3 Łóżka / 1 Łazienka / Duży taras / Sauna
                     </p>
                 </div>
             </div>
             
             <!-- House 2 -->
             <div class="house-card">
-                <img src={features2} alt="House Rubin" class="house-image" />
+                <img src={photo5} alt="House Rubin" class="house-image" />
                 <div class="house-content">
                     <div class="house-info">
-                        <h3 class="house-name">Rubin<span>Mały</span></h3>
-                        <button class="cta-button">Rezerwuj</button>
+            <h3 class="house-name">Rubin<span>Mały</span></h3>
+            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
                     </div>
                     <p>
-                        4 sypialnie / 3 łazienki / kuchnia / Salon / Duży taras / Jacuzzi
+                        4 gości / 1 sypialnia / 2 Łóżka / 1 Łazienka / Duży taras / Sauna
                     </p>
                 </div>
             </div>
@@ -174,34 +196,73 @@
 <!-- Features Section -->
 <section id="features" class="features">
 <div class="container">
-    <div class="features-header">
-        <h2 class="section-heading">
-            <div>Zachęcająca atmosfera do <br>wytchnienia i spokojnego</div>
+    <div class="ruby-header">
+        <h2 class="ruby-heading">
+            Każdy detal zaprojektowany<br> z myślą o relaksie
         </h2>
+        <p class="ruby-description">W Rubinowych Domach wszystko ma znaczenie — ogród i sauna dostępne dla obu domów tworzą prywatną strefę wellness, w której natura gra główną rolę.</p>
     </div>
     
     <div class="features-content">
         <!-- Images -->
         <div class="features-images">
-            <img src={features1} alt="Vacation rental amenities" class="feature-main-image" />
+            <img src={photo9} alt="Vacation rental amenities" class="feature-main-image" />
             <div class="feature-detail-images">
-                <img src={features2} alt="Feature detail" class="feature-detail-image" />
-                <img src={features3} alt="Feature detail" class="feature-detail-image" />
+                <img src={photo10} alt="Feature detail" class="feature-detail-image" />
+                <img src={sauna} alt="Feature detail" class="feature-detail-image" />
             </div>
         </div>
     
         <!-- Features List -->
         <div class="features-list">
-            {#each Array(10) as _, i}
+          <div class="feature-item">
+              <div class="feature-icon">
+                <img src={saunaIcon} alt="Sauna" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Sauna</span>
+          </div>
             <div class="feature-item">
-                <div class="feature-icon">
-                    <svg class="feature-svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                    </svg>
-                </div>
-                <span class="feature-text">Naturalne piękno</span>
-            </div>
-            {/each}
+              <div class="feature-icon">
+                <img src={petsIcon} alt="Pets" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Zwierzęta mile widziane</span>
+          </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src={bbqIcon} alt="BBQ" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Gril ogrodowy</span>
+          </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src={playgroundIcon} alt="Playground" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Trampolina dla dzieci</span>
+          </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src={seaIcon} alt="Sea" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Bliskość plaży</span>
+          </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src={bikeIcon} alt="Bike" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Rowery</span>
+          </div>
+            <div class="feature-item">
+               <div class="feature-icon">
+                <img src={deckIcon} alt="Deck" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Komplet ogrodowy</span>
+          </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <img src={wifiIcon} alt="WiFi" loading="lazy" class="feature-svg" />
+              </div>
+              <span class="feature-text">Dostęp do internetu</span>
+          </div>
         </div>
     </div>
 </div>
@@ -211,11 +272,11 @@
 <section id="map" class="map-section">
     <div class="container">
         <div class="map-body">
-            <div class="map-header">
-                <h2 class="section-heading">
-                    <div>Zachęcająca atmosfera do</div>
-                    <div>wytchnienia i spokojnego</div>
+            <div class="ruby-header">
+                <h2 class="ruby-heading">
+                    Blisko wszystkiego, <br>co warte zobaczenia
                 </h2>
+                <p class="ruby-description">To idealne miejsce dla tych, którzy chcą odpocząć od zgiełku, nie rezygnując z bliskości miejskich atrakcji.</p>
             </div>
             {#if browser}
             <div class="carousel-wrapper">
@@ -229,10 +290,10 @@
                     <div class="embla__container">
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map1} alt="Map" class="map-image" />
+                                <img src={beach} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
+                                        <p class="map-card-title">Plaża w Grzybowie</p>
                                         <p class="map-card-distance">1.2 km</p>
                                     </div>
                                 </div>
@@ -240,10 +301,10 @@
                         </div>
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map2} alt="Map" class="map-image" />
+                                <img src={cycling} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
+                                        <p class="map-card-title">Ścieżka rowerowa</p>
                                         <p class="map-card-distance">1.2 km</p>
                                     </div>
                                 </div>
@@ -251,44 +312,44 @@
                         </div>
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map3} alt="Map" class="map-image" />
+                                <img src={hossoland} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
-                                        <p class="map-card-distance">1.2 km</p>
+                                        <p class="map-card-title">Hossoland</p>
+                                        <p class="map-card-distance">34.0 km</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map1} alt="Map" class="map-image" />
+                                <img src={kolobrzeg} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
-                                        <p class="map-card-distance">1.2 km</p>
+                                        <p class="map-card-title">Kołobrzeg</p>
+                                        <p class="map-card-distance">4.0 km</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map2} alt="Map" class="map-image" />
+                                <img src={szczecin} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
-                                        <p class="map-card-distance">1.2 km</p>
+                                        <p class="map-card-title">Szczecin</p>
+                                        <p class="map-card-distance">135.0 km</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="embla__slide">
                             <div class="map-card-item">
-                                <img src={map3} alt="Map" class="map-image" />
+                                <img src={gdansk} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Centrum Grzybowa</p>
-                                        <p class="map-card-distance">1.2 km</p>
+                                        <p class="map-card-title">Gdańsk</p>
+                                        <p class="map-card-distance">253.0 km</p>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +383,7 @@
           </div>
           
           <!-- Right Side -->
-          <button class="cta-button">Rezerwuj</button>
+          <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
         </div>
     
     <!-- Divider -->
@@ -344,7 +405,7 @@
         position: relative;
         height: 100vh;
         max-height: 820px;
-        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/hero2.jpg') lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(14, 15, 30, 0.00) 0%, rgba(14, 15, 30, 0.50) 40%), url('../lib/assets/images/1.jpg') lightgray 50% / cover no-repeat;
         background-size: cover;
         display: flex;
         align-items: center;
@@ -567,10 +628,23 @@
   
   }
 
+  .ruby-header {
+      margin-bottom: 4rem;
+      h2 {
+        text-align: center;
+        text-align: center;
+      }
+      .ruby-description {
+        max-width: 720px;
+        margin: 24px auto 0 auto;
+        text-align: center;
+      }
+    }
 
   /* Features Section */
   .features {
     padding: 6rem 0;
+
 
     .features-header {
       text-align: center;
@@ -623,13 +697,16 @@
   
           .feature-icon {
             padding: 1rem;
-              border-radius: 4px;
-              background: rgba(224, 215, 204, 0.50);
+            border-radius: 4px;
+            background: rgba(224, 215, 204, 0.50);
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
   
             .feature-svg {
-              width: 1.5rem;
-              height: 1.5rem;
-              color: #4b5563;
+              fill: #4b5563;
             }
           }
         
