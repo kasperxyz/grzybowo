@@ -106,7 +106,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>{$_('hero.title')}</h1>
-                <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
+                <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'hero_booking' })}>Rezerwuj</a>
             </div>
         </div>
     </div>
@@ -168,7 +168,7 @@
                 <div class="house-content">
                     <div class="house-info">
             <h3 class="house-name">Rubin<span>Duży</span></h3>
-            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
+            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>Rezerwuj</a>
                     </div>
                     <p>
                         4 gości / 1 sypialnia / 3 Łóżka / 1 Łazienka / Duży taras / Sauna
@@ -182,7 +182,7 @@
                 <div class="house-content">
                     <div class="house-info">
             <h3 class="house-name">Rubin<span>Mały</span></h3>
-            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
+            <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_small_booking' })}>Rezerwuj</a>
                     </div>
                     <p>
                         4 gości / 1 sypialnia / 2 Łóżka / 1 Łazienka / Duży taras / Sauna
@@ -383,7 +383,7 @@
           </div>
           
           <!-- Right Side -->
-          <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezerwuj</a>
+          <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'footer_booking' })}>Rezerwuj</a>
         </div>
     
     <!-- Divider -->

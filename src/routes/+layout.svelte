@@ -3,6 +3,7 @@
 	import { locale } from 'svelte-i18n';
 	import '$lib/i18n.js';
 	import '../app.css';
+	import { PUBLIC_GA_ID } from '$env/static/public';
 
 	let { children, data } = $props();
 	
@@ -24,6 +25,16 @@
 	<meta property="og:url" content="https://grzybowo.com" />
 	<link rel="canonical" href="https://grzybowo.com" />
 	<link rel="icon" href={favicon} />
+
+	{#if PUBLIC_GA_ID}
+		<script async src={"https://www.googletagmanager.com/gtag/js?id=" + PUBLIC_GA_ID}></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', PUBLIC_GA_ID, { 'anonymize_ip': true });
+		</script>
+	{/if}
 
 	<!-- Minimal JSON-LD structured data -->
 	{@html `<!-- JSON-LD -->\n<script type="application/ld+json">${JSON.stringify({
