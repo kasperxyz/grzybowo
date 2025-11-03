@@ -59,8 +59,11 @@
   // Get current language from URL 
   $: currentLang = $locale || 'pl';  
   
+  import { goto } from '$app/navigation';
+
   function switchLanguage(lang: keyof typeof languageRoutes) {
-    window.location.href = languageRoutes[lang];
+    // Use client-side navigation to avoid 404s on static hosts
+    goto(languageRoutes[lang]);
   }
 
   function handleLanguageChange(event: Event) {
