@@ -3,7 +3,6 @@
 	import { locale } from 'svelte-i18n';
 	import '$lib/i18n.js';
 	import '../app.css';
-	import { env } from '$env/dynamic/public';
 
 	let { children, data } = $props();
 	
@@ -26,10 +25,13 @@
 	<link rel="canonical" href="https://grzybowo.com" />
 	<link rel="icon" href={favicon} />
 
-	{#if env.PUBLIC_GA_ID}
-		<script async src={"https://www.googletagmanager.com/gtag/js?id=" + env.PUBLIC_GA_ID}></script>
-		{@html `<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','${env.PUBLIC_GA_ID}',{anonymize_ip:true});</script>`}
-	{/if}
+	<!-- Google Analytics 4 - hardcoded measurement ID -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y19L1PTT2W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+		gtag('config','G-Y19L1PTT2W',{anonymize_ip:true});
+	</script>
 
 	<!-- Minimal JSON-LD structured data -->
 	{@html `<!-- JSON-LD -->\n<script type="application/ld+json">${JSON.stringify({
