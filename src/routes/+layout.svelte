@@ -25,12 +25,14 @@
 	<link rel="canonical" href="https://grzybowo.com" />
 	<link rel="icon" href={favicon} />
 
-	<!-- Google Analytics 4 - hardcoded measurement ID -->
+	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y19L1PTT2W"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-		gtag('config','G-Y19L1PTT2W',{anonymize_ip:true});
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-Y19L1PTT2W');
 	</script>
 
 	<!-- Minimal JSON-LD structured data -->
