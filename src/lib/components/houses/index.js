@@ -1,0 +1,1 @@
+export { default as Houses } from './houses.svelte';

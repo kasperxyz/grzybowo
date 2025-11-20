@@ -108,3 +108,67 @@ h6 { font-size: clamp(1rem, 1.5vw + 0.2rem, 1.25rem); }
         padding: 0.5rem;
     }
 }
+
+.embla__slide {    flex: 0 0 100%;    min-width: 0;  display: flex;}
+
+  .embla__prev,
+  .embla__next {
+    position: absolute;
+    z-index: 20;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    top: 182px;
+  }
+
+  .embla__prev:hover,
+  .embla__next:hover {
+    background: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+  }
+
+  .embla__prev {
+    left: 1rem;
+  }
+
+  .embla__next {
+    right: 1rem;
+  }
+
+  .embla__prev svg,
+  .embla__next svg {
+    color: #000;
+  }
+
+  .embla {
+    overflow: hidden;
+    /* padding: 0 2rem; */
+    position: relative;
+    flex: 1;
+  }
+
+  .embla__container {
+    display: flex;
+  }
+
+.ruby-header {
+    margin-bottom: 4rem;
+    h2 {
+    text-align: center;
+    text-align: center;
+    }
+    .ruby-description {
+    max-width: 720px;
+    margin: 24px auto 0 auto;
+    text-align: center;
+    }
+}
