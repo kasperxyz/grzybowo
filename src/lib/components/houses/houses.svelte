@@ -37,7 +37,7 @@
   import { browser } from '$app/environment';
 
   const bookingUrl = 'https://www.sunandsnow.pl/apartament-grzybowo-inteligentnerubinowedomy-988';
-
+  const emblaOptions = { loop: true }
   // Separate carousel instance for houseA
   let emblaApiHouseA: any;
 
@@ -85,7 +85,7 @@
                 <button class="embla__prev" on:click={scrollPrevHouseA} aria-label="Previous slide">
                     <img src={back} alt="Previous" />
                 </button>
-                <div class="embla" use:emblaCarouselSvelte on:emblaInit={onInitHouseA}>
+                <div class="embla" use:emblaCarouselSvelte={{ options: emblaOptions, plugins: [] }} on:emblaInit={onInitHouseA}>
                   <div class="embla__container">
                     <div class="embla__slide"><img src={photo_1a} alt="House Rubin" class="house-image" /></div>    
                     <div class="embla__slide"><img src={photo_2a} alt="House Rubin" class="house-image" /></div>    
@@ -131,7 +131,7 @@
                 <button class="embla__prev" on:click={scrollPrevHouseB} aria-label="Previous slide">
                     <img src={back} alt="Previous" />
                 </button>
-                <div class="embla" use:emblaCarouselSvelte on:emblaInit={onInitHouseB}>
+                <div class="embla" use:emblaCarouselSvelte={{ options: emblaOptions, plugins: [] }} on:emblaInit={onInitHouseB}>
                   <div class="embla__container">
                     <div class="embla__slide"><img src={photo_4b} alt="House Rubin" class="house-image" /></div>   
                     <div class="embla__slide"><img src={photo_3b} alt="House Rubin" class="house-image" /></div> 
