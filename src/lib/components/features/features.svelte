@@ -1,7 +1,7 @@
 <script lang="ts">
   import photo_1 from '$lib/assets/images/backyard/1-5.jpg';
   import photo_2 from '$lib/assets/images/backyard/1-3.jpg';
-  import sauna from '$lib/assets/images/sauna.jpg';
+  import sauna from '$lib/assets/images/backyard/sauna.jpg';
   import saunaIcon from '$lib/assets/icons/sauna.svg';
   import petsIcon from '$lib/assets/icons/pets.svg';
   import bbqIcon from '$lib/assets/icons/bbq.svg';

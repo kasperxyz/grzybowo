@@ -47,11 +47,8 @@
             {#if browser}
             <div class="carousel-wrapper">
                 <button class="embla__prev" on:click={scrollPrev} aria-label="Previous slide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <img src={back} alt="Previous" />
                 </button>
-                
                 <div class="embla" use:emblaCarouselSvelte={{ options: emblaOptions, plugins: [] }} on:emblaInit={onInit}>
                     <div class="embla__container">
                         <div class="embla__slide">
@@ -135,9 +132,7 @@
                 </div>
                 
                 <button class="embla__next" on:click={scrollNext} aria-label="Next slide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <img src={forward} alt="Next" />
                 </button>
             </div>
             {/if}
