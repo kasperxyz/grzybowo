@@ -1,37 +1,67 @@
 {
+  "cta": {
+    "book_now": "Rezerwuj"
+  },
   "nav": {
     "houses": "Domy",
     "attractions": "Udogodnienia", 
-    "location": "Atrakcje"
+    "location": "Atrakcje",
+    "instructions": "Instrukcja obsługi"
   },
   "hero": {
     "title": "Inteligentne rubinowe domy"
   },
   "intro": {
-    "heading": "Zachęcająca atmosfera do wytchnienia i spokoju",
-    "description_1": "Rubinowe Domy to miejsce, w którym nowoczesny komfort spotyka się z nadmorskim spokojem. Każdy detal został zaprojektowany z myślą o odpoczynku — od przestronnych wnętrz po przemyślane rozwiązania technologiczne, które dbają o Twój komfort.",
-    "description_2": "Zatrzymaj się tu na chwilę, by poczuć równowagę między naturą a wygodą."
+    "heading": "CICHA OSTOJA ZACHĘCAJĄCA DO WYTCHNIENIA I RELAKSU",
+    "description_1": "Rubinowe Domy to miejsce, w którym nowoczesność oraz komfort spotykają się z otaczającą przyrodą i nadmorskim klimatem, wspólnie służą odpoczynkowi oraz kreują atmosferę spokoju i wytchnienia. Każda funkcjonalność budynków została zaprojektowana z myślą o odpoczynku, zabawie, bezpieczeństwie oraz komforcie.",
+    "description_2": "Kompleks dwóch budynków zlokalizowanych w jednym, wspólnym ogrodzie jest idealnym miejscem do pobytu oraz wspólnego spędzania czasu przez rodziny z dziećmi, rodziny wielopokoleniowe oraz przyjaciół. Ogrodzony i zabezpieczony teren zachęca także do przyjazdu ze swoimi czworonożnymi pupilami."
   },
   "houses": {
-    "heading": "Dwa domy, jedna filozofia spokoju",
-    "house_name": "Rubin",
-    "house_size": "Duży"
+    "heading": "DWA DOMY, JEDEN LUKSUSOWY STANDARD",
+    "description": "Rubinowe Domy oferują swój wysoki standard wykończenia i wyposażenia. W połączeniu z pięknym ogrodem, jego atrakcjami oraz zieloną naturą, dostarczają wielu pozytywnych wrażeń. Sauna ogrodowa oraz ogrodowe prysznice pomagają w relaksie, a ogrodowe wyposażenie i wszechobecny internet, zapewniają dobrą zabawę.",
+    "small": "mały",
+    "big": "duży",
+    "features_big": [
+      "4 gości",
+      "1 sypialnia",
+      "2 łóżka",
+      "1 łazienka",
+      "Duży taras",
+      "Sauna ogrodowa",
+      "Możliwość poruszania się wózka inwalidzkiego"
+    ],
+    "features_small": [
+      "4 gości",
+      "1 sypialnia",
+      "3 łóżka",
+      "1 łazienka",
+      "Duży taras",
+      "Sauna ogrodowa"
+    ],
+    "instructions": "Instrukcja obsługi"
   },
   "features": {
-    "heading_line1": "Zachęcająca atmosfera do", 
-    "heading_line2": "wytchnienia i spokojnego",
-    "feature_item": "Naturalne piękno"
+    "heading": "KAŻDE ROZWIĄZANIE POWSTAŁO Z MYŚLĄ O WYGODZIE I RELAKSIE",
+    "description": "W Rubinowych Domach każdy szczegół ma znaczenie. Dlatego też zadbano o wiele elementów, które wspierają odpoczynek i miłe spędzanie czasu.",
+    "sauna": "Sauna ogrodowa",
+    "grill": "Gril ogrodowy",
+    "beach": "Bliskość plaży",
+    "furniture": "Komplet ogrodowy",
+    "pets": "Zwierzęta mile widziane",
+    "fun": "Trampolina dla dzieci",
+    "bikes": "Rowery",
+    "internet": "Dostęp do internetu"
   },
   "map": {
-    "heading_line1": "Zachęcająca atmosfera do",
-    "heading_line2": "wytchnienia i spokojnego", 
-    "map_title": "Mapa lokalizacji",
-    "map_subtitle": "Gdańsk • Szczecin"
-  },
-  "footer": {
-    "company_line1": "INTELIGENTNE",
-    "company_line2": "DOMY RUBINOWE",
-    "copyright": "@2025"
+    "heading": "BLISKO WSZYSTKIEGO, CO WARTO ZOBACZYĆ",
+    "description": "Rubinowe Domy to idealne miejsce dla tych, którzy odpoczywając od zgiełku pragną bliskości plaży, a jednocześnie nie chcą rezygnować z bliskości innych atrakcji.",
+    "beach": "Plaża",
+    "bikes": "Ścieżka rowerowe",
+    "hossoland": "Hossoland",
+    "kolobrzeg": "Kołobrzeg",
+    "wydmy": "Rezerwat przyrody",
+    "szczecin": "Szczecin",
+    "gdansk": "Gdańsk"
   },
   "common": {
     "languages": {

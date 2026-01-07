@@ -1,45 +1,72 @@
 {
+  "cta": {
+    "book_now": "Reservieren"
+  },
   "nav": {
     "houses": "Häuser",
-    "attractions": "Attraktionen",
-    "location": "Lage"
+    "attractions": "Annehmlichkeiten", 
+    "location": "Attraktionen",
+    "instructions": "Bedienungsanleitung"
   },
   "hero": {
-    "title_line1": "Intelligente",
-    "title_line2": "Rubinhäuser",
-    "cta_button": "Bei Sun and Snow buchen"
+    "title": "Smarte Rubin-Häuser"
   },
   "intro": {
-    "heading_line1": "Einladende Atmosphäre für",
-    "heading_line2": "Entspannung und Ruhe",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+    "heading": "EINE RUHIGE OASE, DIE ZUR ERHOLUNG UND ENTSPANNUNG EINLÄDT",
+    "description_1": "Rubin-Häuser sind ein Ort, an dem Modernität und Komfort auf die umgebende Natur und Meeresatmosphäre treffen und gemeinsam der Erholung dienen und eine Atmosphäre der Ruhe und Entspannung schaffen. Jede Funktionalität der Gebäude wurde im Hinblick auf Erholung, Spaß, Sicherheit und Komfort entworfen.",
+    "description_2": "Ein Komplex aus zwei Gebäuden in einem gemeinsamen Garten ist der ideale Ort zum Verweilen und gemeinsamen Zeitverbringen für Familien mit Kindern, Mehrgenerationenfamilien und Freunde. Das eingezäunte und gesicherte Gelände lädt auch dazu ein, mit Ihren vierbeinigen Haustieren anzureisen."
   },
   "houses": {
-    "heading_line1": "Einladende Atmosphäre für",
-    "heading_line2": "Entspannung und Ruhe",
-    "house_name": "Rubin",
-    "house_size": "Groß"
+    "heading": "ZWEI HÄUSER, EIN LUXUSSTANDARD",
+    "description": "Rubin-Häuser bieten ihren hohen Standard an Ausstattung und Einrichtung. In Kombination mit einem schönen Garten, seinen Attraktionen und grüner Natur bieten sie viele positive Erlebnisse. Die Gartensauna und Gartenduschen helfen bei der Entspannung, während die Gartenausstattung und das allgegenwärtige Internet für gute Unterhaltung sorgen.",
+    "small": "klein",
+    "big": "groß",
+    "features_big": [
+      "4 Gäste",
+      "1 Schlafzimmer",
+      "2 Betten",
+      "1 Badezimmer",
+      "Große Terrasse",
+      "Gartensauna",
+      "Rollstuhlgerecht"
+    ],
+    "features_small": [
+      "4 Gäste",
+      "1 Schlafzimmer",
+      "3 Betten",
+      "1 Badezimmer",
+      "Große Terrasse",
+      "Gartensauna"
+    ],
+    "instructions": "Bedienungsanleitung"
   },
   "features": {
-    "heading_line1": "Einladende Atmosphäre für",
-    "heading_line2": "Entspannung und Ruhe",
-    "feature_item": "Natürliche Schönheit"
+    "heading": "JEDE LÖSUNG MIT BLICK AUF KOMFORT UND ENTSPANNUNG ENTWICKELT",
+    "description": "In den Rubin-Häusern zählt jedes Detail. Deshalb wurde auf viele Elemente geachtet, die Erholung und angenehme Zeitgestaltung unterstützen.",
+    "sauna": "Gartensauna",
+    "grill": "Gartengrill",
+    "beach": "Strandnähe",
+    "furniture": "Gartenmöbelset",
+    "pets": "Haustiere willkommen",
+    "fun": "Kindertrampolin",
+    "bikes": "Fahrräder",
+    "internet": "Internetzugang"
   },
   "map": {
-    "heading_line1": "Einladende Atmosphäre für",
-    "heading_line2": "Entspannung und Ruhe",
-    "map_title": "Standortkarte",
-    "map_subtitle": "Gdańsk • Szczecin"
-  },
-  "footer": {
-    "company_line1": "INTELLIGENTE",
-    "company_line2": "RUBIN HÄUSER",
-    "copyright": "@2025"
+    "heading": "NAH AN ALLEM, WAS SEHENSWERT IST",
+    "description": "Rubin-Häuser sind der ideale Ort für diejenigen, die sich vom Trubel erholen und gleichzeitig die Nähe zum Strand wünschen, ohne auf die Nähe zu anderen Attraktionen verzichten zu müssen.",
+    "beach": "Strand",
+    "bikes": "Radweg",
+    "hossoland": "Hossoland",
+    "kolobrzeg": "Kołobrzeg",
+    "wydmy": "Naturschutzgebiet",
+    "szczecin": "Stettin",
+    "gdansk": "Danzig"
   },
   "common": {
     "languages": {
-      "polish": "Polnisch",
-      "english": "Englisch",
+      "polish": "Polski",
+      "english": "English", 
       "german": "Deutsch"
     }
   }

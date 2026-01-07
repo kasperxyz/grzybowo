@@ -10,6 +10,7 @@
   import szczecin from '$lib/assets/images/szczecin.jpg';
   import emblaCarouselSvelte from 'embla-carousel-svelte';
   import { browser } from '$app/environment';
+  import { _ } from 'svelte-i18n';
 
     const emblaOptions = {      
     slidesToScroll: 1,
@@ -40,9 +41,9 @@
         <div class="map-body">
             <div class="ruby-header">
                 <h2 class="ruby-heading">
-                    Blisko wszystkiego, <br>co warte zobaczenia
+                    {$_('map.heading')}
                 </h2>
-                <p class="ruby-description">To idealne miejsce dla tych, którzy chcą odpocząć od zgiełku, nie rezygnując z bliskości miejskich atrakcji.</p>
+                <p class="ruby-description">{$_('map.description')}</p>
             </div>
             {#if browser}
             <div class="carousel-wrapper">
@@ -56,7 +57,7 @@
                                 <img src={beach} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Plaża w Grzybowie</p>
+                                        <p class="map-card-title">{$_('map.beach')}</p>
                                         <p class="map-card-distance">1.2 km</p>
                                     </div>
                                 </div>
@@ -67,7 +68,7 @@
                                 <img src={cycling} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Ścieżka rowerowa R-10</p>
+                                        <p class="map-card-title">{$_('map.bikes')}</p>
                                         <p class="map-card-distance">1.2 km</p>
                                     </div>
                                 </div>
@@ -78,7 +79,7 @@
                                 <img src={hossoland} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Hossoland</p>
+                                        <p class="map-card-title">{$_('map.hossoland')}</p>
                                         <p class="map-card-distance">34.0 km</p>
                                     </div>
                                 </div>
@@ -89,7 +90,7 @@
                                 <img src={kolobrzeg} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Kołobrzeg</p>
+                                        <p class="map-card-title">{$_('map.kolobrzeg')}</p>
                                         <p class="map-card-distance">4.0 km</p>
                                     </div>
                                 </div>
@@ -100,7 +101,7 @@
                                 <img src={wydmy} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Rezerwat przyrody</p>
+                                        <p class="map-card-title">{$_('map.wydmy')}</p>
                                         <p class="map-card-distance">2.1 km</p>
                                     </div>
                                 </div>
@@ -111,7 +112,7 @@
                                 <img src={szczecin} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Szczecin</p>
+                                        <p class="map-card-title">{$_('map.szczecin')}</p>
                                         <p class="map-card-distance">135.0 km</p>
                                     </div>
                                 </div>
@@ -122,7 +123,7 @@
                                 <img src={gdansk} alt="Map" class="map-image" />
                                 <div class="map-card-content">
                                     <div class="map-card-text">
-                                        <p class="map-card-title">Gdańsk</p>
+                                        <p class="map-card-title">{$_('map.gdansk')}</p>
                                         <p class="map-card-distance">253.0 km</p>
                                     </div>
                                 </div>
@@ -149,7 +150,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4rem;
 
       .carousel-wrapper {
         position: relative;

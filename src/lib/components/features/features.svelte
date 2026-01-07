@@ -10,14 +10,15 @@
   import bikeIcon from '$lib/assets/icons/bike.svg';
   import deckIcon from '$lib/assets/icons/deck.svg';
   import wifiIcon from '$lib/assets/icons/wifi.svg';
+  import { _ } from 'svelte-i18n';
 </script>
 <section id="features" class="features">
 <div class="container">
     <div class="ruby-header">
         <h2 class="ruby-heading">
-            Każdy detal zaprojektowany<br> z myślą o relaksie
+            {$_('features.heading')}
         </h2>
-        <p class="ruby-description">W Rubinowych Domach wszystko ma znaczenie — ogród i sauna dostępne dla obu domów tworzą prywatną strefę wellness, w której natura gra główną rolę.</p>
+        <p class="ruby-description">{$_('features.description')}</p>
     </div>
     
     <div class="features-content">
@@ -36,49 +37,49 @@
               <div class="feature-icon">
                 <img src={saunaIcon} alt="Sauna" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Sauna</span>
+              <span class="feature-text">{$_('features.sauna')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={petsIcon} alt="Pets" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Zwierzęta mile widziane</span>
+              <span class="feature-text">{$_('features.pets')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={bbqIcon} alt="BBQ" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Gril ogrodowy</span>
+              <span class="feature-text">{$_('features.grill')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={playgroundIcon} alt="Playground" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Trampolina dla dzieci</span>
+              <span class="feature-text">{$_('features.fun')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={seaIcon} alt="Sea" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Bliskość plaży</span>
+              <span class="feature-text">{$_('features.beach')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={bikeIcon} alt="Bike" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Rowery</span>
+              <span class="feature-text">{$_('features.bikes')}</span>
           </div>
             <div class="feature-item">
                <div class="feature-icon">
                 <img src={deckIcon} alt="Deck" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Komplet ogrodowy</span>
+              <span class="feature-text">{$_('features.furniture')}</span>
           </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <img src={wifiIcon} alt="WiFi" loading="lazy" class="feature-svg" />
               </div>
-              <span class="feature-text">Dostęp do internetu</span>
+              <span class="feature-text">{$_('features.internet')}</span>
           </div>
         </div>
     </div>

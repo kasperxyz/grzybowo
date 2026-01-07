@@ -54,7 +54,7 @@
                     <a href="#houses" class="nav-link">{$_('nav.houses')}</a>
                     <a href="#features" class="nav-link">{$_('nav.attractions')}</a>
                     <a href="#map" class="nav-link">{$_('nav.location')}</a>
-                    <a href={instrukcja_a} class="nav-link" download rel="noopener noreferrer">Instrukcja obsługi</a>
+                    <a href="#" class="nav-link" download rel="noopener noreferrer">{$_('nav.instructions')}</a>
                 </div>
                 
             </div>
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>{$_('hero.title')}</h1>
-                <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'hero_booking' })}>Rezerwuj</a>
+                <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'hero_booking' })}>{$_('cta.book_now')}</a>
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
           </div>
           
           <!-- Right Side -->
-          <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'footer_booking' })}>Rezerwuj</a>
+          <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'footer_booking' })}>{$_('cta.book_now')}</a>
         </div>
     
     <!-- Divider -->

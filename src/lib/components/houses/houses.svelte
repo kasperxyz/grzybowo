@@ -35,6 +35,7 @@
   import instrukcja_a from '$lib/assets/instrukcja_a.pdf';
   import emblaCarouselSvelte from 'embla-carousel-svelte';
   import { browser } from '$app/environment';
+  import { _ } from 'svelte-i18n';
 
   const bookingUrl = 'https://www.sunandsnow.pl/apartament-grzybowo-inteligentnerubinowedomy-988';
   const emblaOptions = { loop: true }
@@ -73,9 +74,9 @@
     <div class="container">
       <div class="ruby-header">
           <h2 class="ruby-heading">
-              Dwa domy, jedna filozofia spokoju
+              {$_('houses.heading')}
           </h2>
-          <p class="ruby-description">Oba domy oferują ten sam standard luksusu. Niezależnie, który wybierzesz, zyskujesz dostęp do wspólnego ogrodu i sauny — idealnego miejsca na poranny relaks lub wieczorne rozmowy pod gwiazdami.</p>
+          <p class="ruby-description">{$_('houses.description')}</p>
       </div>
         
         <div class="houses-grid">
@@ -109,18 +110,20 @@
                 </button>
                 <div class="house-content">
                     <div class="house-info">
-                      <h3 class="house-name">Rubin<span>Duży</span></h3>
+                      <h3 class="house-name">Rubin<span>{$_('houses.big')}</span></h3>
                       <div class="house-actions">
-                        <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>Rezerwuj</a>
-                        <a class="cta-link" href={instrukcja_a} download rel="noopener noreferrer">
-                          Intstrukcja obsługi
+                        <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>{$_('cta.book_now')}</a>
+                        <a class="cta-link" href="#" download rel="noopener noreferrer">
+                          {$_('nav.instructions')}
                           <img src={download} alt="Instructions" class="cta-link-icon" />
                         </a>
                       </div>
                     </div>
-                    <p>
-                        4 gości / 1 sypialnia / 3 Łóżka / 1 Łazienka / Duży taras / Sauna
-                    </p>
+                    <ul class="features-list">
+                      {#each $_('houses.features_big', { default: [] }) as feature}
+                        <li>{feature}</li>
+                      {/each}
+                    </ul>
                 </div>
             {/if}
             </div>
@@ -155,18 +158,20 @@
                 </button>
                 <div class="house-content">
                     <div class="house-info">
-                      <h3 class="house-name">Rubin<span>Mały</span></h3>
+                      <h3 class="house-name">Rubin<span>{$_('houses.small')}</span></h3>
                       <div class="house-actions">
-                        <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>Rezerwuj</a>
-                        <a class="cta-link" href={instrukcja_a} download rel="noopener noreferrer">
-                          Intstrukcja obsługi
+                        <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>{$_('cta.book_now')}</a>
+                        <a class="cta-link" href="#" download rel="noopener noreferrer">
+                          {$_('nav.instructions')}
                           <img src={download} alt="Instructions" class="cta-link-icon" />
                         </a>
                       </div>
                     </div>
-                    <p>
-                        4 gości / 1 sypialnia / 3 Łóżka / 1 Łazienka / Duży taras / Sauna
-                    </p>
+                    <ul class="features-list">
+                      {#each $_('houses.features_small', { default: [] }) as feature}
+                        <li>{feature}</li>
+                      {/each}
+                    </ul>
                 </div>
             {/if}
             </div>
@@ -211,6 +216,24 @@
           padding: 2rem;
             p {
                 margin: 0;
+            }
+            .features-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.5rem;
+              align-items: center;
+              li {
+                margin: 0;
+                padding: 0;
+                &:not(:last-child)::after {
+                  content: "/";
+                  margin-left: 0.5rem;
+                  color: #999;
+                }
+              }
             }
           @media (max-width: 768px) {
             gap: 2rem;

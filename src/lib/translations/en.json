@@ -1,45 +1,73 @@
 {
+  "cta": {
+    "book_now": "Reserve"
+  },
   "nav": {
     "houses": "Houses",
-    "attractions": "Attractions",
-    "location": "Location"
+    "attractions": "Amenities", 
+    "location": "Attractions",
+    "instructions": "User manual"
   },
   "hero": {
-    "title": "Intelligent ruby houses",
-    "cta_button": "Book on Sun and Snow"
+    "title": "Smart Ruby Houses"
   },
   "intro": {
-    "heading": "Inviting atmosphere for",
-    "description_1": "relaxation and peace",
-    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+    "heading": "A QUIET HAVEN INVITING REST AND RELAXATION",
+    "description_1": "Ruby Houses is a place where modernity and comfort meet the surrounding nature and seaside atmosphere, together serving relaxation and creating an atmosphere of peace and rest. Every functionality of the buildings has been designed with rest, fun, safety and comfort in mind.",
+    "description_2": "A complex of two buildings located in one shared garden is an ideal place to stay and spend time together for families with children, multigenerational families and friends. The fenced and secured area also encourages arrival with your four-legged pets."
   },
   "houses": {
-    "heading_line1": "Inviting atmosphere for",
-    "heading_line2": "relaxation and peace",
-    "house_name": "Ruby",
-    "house_size": "Large"
+    "heading": "TWO HOUSES, ONE LUXURY STANDARD",
+    "description": "Ruby Houses offer their high standard of finishing and equipment. Combined with a beautiful garden, its attractions and green nature, they provide many positive experiences. The garden sauna and garden showers help with relaxation, while the garden equipment and ubiquitous internet ensure good fun.",
+    "small": "small",
+    "big": "big",
+    "features_big": [
+      "4 guests",
+      "1 bedroom",
+      "2 beds",
+      "1 bathroom",
+      "Large terrace",
+      "Garden sauna",
+      "Wheelchair accessible"
+    ],
+    "features_small": [
+      "4 guests",
+      "1 bedroom",
+      "3 beds",
+      "1 bathroom",
+      "Large terrace",
+      "Garden sauna"
+    ],
+    "instructions": "User manual"
   },
   "features": {
-    "heading_line1": "Inviting atmosphere for",
-    "heading_line2": "relaxation and peace",
-    "feature_item": "Natural beauty"
+    "heading": "EVERY SOLUTION DESIGNED WITH COMFORT AND RELAXATION IN MIND",
+    "description": "In Ruby Houses, every detail matters. That's why many elements have been taken care of that support rest and pleasant time spending.",
+    "sauna": "Garden sauna",
+    "grill": "Garden grill",
+    "beach": "Close to the beach",
+    "furniture": "Garden furniture set",
+    "pets": "Pets welcome",
+    "fun": "Children's trampoline",
+    "bikes": "Bicycles",
+    "internet": "Internet access"
   },
   "map": {
-    "heading_line1": "Inviting atmosphere for",
-    "heading_line2": "relaxation and peace",
-    "map_title": "Location map",
-    "map_subtitle": "Gdańsk • Szczecin"
-  },
-  "footer": {
-    "company_line1": "INTELLIGENT",
-    "company_line2": "RUBY HOUSES",
-    "copyright": "@2025"
+    "heading": "CLOSE TO EVERYTHING WORTH SEEING",
+    "description": "Ruby Houses is an ideal place for those who, while resting from the hustle and bustle, desire proximity to the beach, while not wanting to give up proximity to other attractions.",
+    "beach": "Beach",
+    "bikes": "Bike path",
+    "hossoland": "Hossoland",
+    "kolobrzeg": "Kołobrzeg",
+    "wydmy": "Nature reserve",
+    "szczecin": "Szczecin",
+    "gdansk": "Gdańsk"
   },
   "common": {
     "languages": {
-      "polish": "Polish",
-      "english": "English",
-      "german": "German"
+      "polish": "Polski",
+      "english": "English", 
+      "german": "Deutsch"
     }
   }
 }
