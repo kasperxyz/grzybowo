@@ -4,14 +4,23 @@
   import { availableLanguages, languageRoutes } from '$lib/i18n.js';
   import logoSvg from '$lib/assets/images/logo.svg';
   import logoBig from '$lib/assets/images/logo-big.svg';
-  import instrukcja_a from '$lib/assets/instrukcja_a.pdf';
+  import instrukcja_pl from '$lib/assets/Ostoja.pdf';
+  import instrukcja_de from '$lib/assets/Ostoja_DE.pdf';
+  import instrukcja_en from '$lib/assets/Ostoja_ENG.pdf';
   import { Houses } from '$lib/components/houses';
   import { Area } from '$lib/components/area';
   import { Features } from '$lib/components/features';
   import { Introduction } from '$lib/components/introduction';
 
+  const instructionPdfByLang = {
+    pl: instrukcja_pl,
+    en: instrukcja_en,
+    de: instrukcja_de,
+  };
+
   // Get current language from URL 
   $: currentLang = $locale || 'pl';  
+  $: instructionPdf = instructionPdfByLang[currentLang as keyof typeof instructionPdfByLang] ?? instrukcja_pl;
   
   import { goto } from '$app/navigation';
 
@@ -54,7 +63,7 @@
                     <a href="#houses" class="nav-link">{$_('nav.houses')}</a>
                     <a href="#features" class="nav-link">{$_('nav.attractions')}</a>
                     <a href="#map" class="nav-link">{$_('nav.location')}</a>
-                    <a href="#" class="nav-link" download rel="noopener noreferrer">{$_('nav.instructions')}</a>
+                    <a href={instructionPdf} class="nav-link" download rel="noopener noreferrer">{$_('nav.instructions')}</a>
                 </div>
                 
             </div>

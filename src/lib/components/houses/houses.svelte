@@ -32,13 +32,21 @@
   import photo_13b from '$lib/assets/images/house_b/1-15.jpg';
   import photo_14b from '$lib/assets/images/house_b/1-16.jpg';
   import photo_15b from '$lib/assets/images/house_b/1.jpg';
-  import instrukcja_a from '$lib/assets/instrukcja_a.pdf';
+  import instrukcja_pl from '$lib/assets/Ostoja.pdf';
+  import instrukcja_de from '$lib/assets/Ostoja_DE.pdf';
+  import instrukcja_en from '$lib/assets/Ostoja_ENG.pdf';
   import emblaCarouselSvelte from 'embla-carousel-svelte';
   import { browser } from '$app/environment';
-  import { _ } from 'svelte-i18n';
+  import { _, locale } from 'svelte-i18n';
 
   const bookingUrl = 'https://www.sunandsnow.pl/apartament-grzybowo-inteligentnerubinowedomy-988';
   const emblaOptions = { loop: true }
+  const instructionPdfByLang = {
+    pl: instrukcja_pl,
+    en: instrukcja_en,
+    de: instrukcja_de,
+  };
+  $: instructionPdf = instructionPdfByLang[($locale || 'pl') as keyof typeof instructionPdfByLang] ?? instrukcja_pl;
   // Separate carousel instance for houseA
   let emblaApiHouseA: any;
 
@@ -113,7 +121,7 @@
                       <h3 class="house-name">Rubin<span>{$_('houses.big')}</span></h3>
                       <div class="house-actions">
                         <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>{$_('cta.book_now')}</a>
-                        <a class="cta-link" href="#" download rel="noopener noreferrer">
+                        <a class="cta-link" href={instructionPdf} download rel="noopener noreferrer">
                           {$_('nav.instructions')}
                           <img src={download} alt="Instructions" class="cta-link-icon" />
                         </a>
@@ -161,7 +169,7 @@
                       <h3 class="house-name">Rubin<span>{$_('houses.small')}</span></h3>
                       <div class="house-actions">
                         <a class="cta-button" href={bookingUrl} target="_blank" rel="noopener noreferrer" on:click={() => window.gtag?.('event', 'book_click', { event_category: 'cta', event_label: 'house_large_booking' })}>{$_('cta.book_now')}</a>
-                        <a class="cta-link" href="#" download rel="noopener noreferrer">
+                        <a class="cta-link" href={instructionPdf} download rel="noopener noreferrer">
                           {$_('nav.instructions')}
                           <img src={download} alt="Instructions" class="cta-link-icon" />
                         </a>
